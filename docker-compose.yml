@@ -1,0 +1,18 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: vss-db
+    environment:
+      POSTGRES_USER: vss
+      POSTGRES_PASSWORD: vss_dev_password
+      POSTGRES_DB: vss
+    ports:
+      - "8010:5432"
+    volumes:
+      - vss-data:/var/lib/postgresql/data
+      - ./backend/migrations:/migrations:ro
+      - ./backend/seeds:/seeds:ro
+      - ./backend/db-init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  vss-data:

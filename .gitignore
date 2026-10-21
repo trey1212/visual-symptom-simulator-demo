@@ -1,0 +1,13 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Go
+backend/bin/
+*.exe
+*.test
+*.out
+
+# original downloads before i resized them (too big for git)
+backend/data/_originals/

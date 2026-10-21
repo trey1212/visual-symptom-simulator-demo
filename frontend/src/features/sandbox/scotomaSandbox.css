@@ -1,0 +1,12 @@
+.scotoma-sandbox { min-height: 100dvh; background: #0c121c; color: #e4eaf3; font-family: system-ui, sans-serif; }
+.scotoma-layout { display: grid; grid-template-columns: minmax(0, 1fr) 290px; gap: 20px; padding: 24px 28px; }
+.scotoma-preview { min-width: 0; }
+.scotoma-preview-caption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; margin-bottom: 12px; font-size: 12px; color: #a3b1c4; overflow-wrap: anywhere; }
+.scotoma-canvas { height: max(380px, calc(100dvh - 80px)); overflow: hidden; border-radius: 10px; background: #141c29; }
+.scotoma-canvas canvas { display: block; touch-action: none; cursor: crosshair; }
+.scotoma-error { margin-top: 12px; padding: 12px; border: 1px solid #ba805b; border-radius: 6px; color: #ffd7bd; font-size: 13px; }
+.scotoma-sidebar .lil-gui.root { width: 100%; --background-color: #192332; --widget-color: #2a394e; --hover-color: #344760; --focus-color: #405673; --number-color: #99dece; --title-background-color: #223046; --font-size: 12px; --widget-height: 23px; }
+@media (max-width: 760px) {
+  .scotoma-layout { grid-template-columns: minmax(0, 1fr); padding: 16px; }
+  .scotoma-canvas { height: 48dvh; min-height: 280px; }
+}

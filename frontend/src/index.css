@@ -1,0 +1,13 @@
+/* Global styles. Replaced once the UI design is added. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
