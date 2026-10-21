@@ -38,7 +38,6 @@ jobs:
         with:
           # IMPORTANT: Change this path to match your framework's output folder
           # e.g., './dist' for Vite/tsc, './out' for Next.js, './build' for React
-          path: './dist' 
           path: './frontend/dist'
 
   deploy:
